@@ -1,0 +1,52 @@
+* {
+  box-sizing: border-box;
+}
+ /* ramen box */
+nav {
+  position: fixed;
+  bottom: 0 ;
+  display: flex;
+  background: whitesmoke;
+  width: 100vw;
+  height: 57vh;
+  color: black;
+  transform: translateY(15vh);
+  transition: transform 0.3s;
+}
+
+.list {
+  display: flex;
+  list-style: none;
+  flex-grow: 1;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 4.5vh;
+}
+
+li {
+  padding: 13px;
+  font-size: 10vw;
+}
+
+.open-menu {
+  position: fixed;
+  cursor: pointer;
+  margin-right: 45vw;
+  margin-left: 45vw;
+  background-color: blue;
+  height: 6.5vh;
+  width: 10vw;
+}
+.menu-icon {
+  position: fixed;
+  width: 10vw;
+  height: 6.8vh;
+  top: 0px;
+}
+.menu-opener {
+  position: fixed;
+  width: 8vw;
+}
+.is-open {
+  transform: none;
+}
