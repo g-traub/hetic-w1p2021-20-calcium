@@ -3,9 +3,9 @@
   <head>
     <title>Article - Nissin : l'empire de la nouille</title>
     <!-- STYLESHEETS A AJOUTER-->
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="shortcut icon" type="image/x-icon" href="Ressources/Images/logo-miniature.png"/>
+    <link rel="stylesheet" href="../../css/reset.css">
+    <link rel="stylesheet" href="../../css/article.css">
+    <link rel="shortcut icon" type="image/x-icon" href="ressources/images/logo-miniature.png"/>
     <!-- SCRIPTS A AJOUTER  -->
     <script defer rel="script" src="js/main.js"></script>
     <meta charset="utf-8"/>    
@@ -13,40 +13,52 @@
     <meta name="description" content="Site de présentation produits Nissin Foods"/>
   </head>
   <body>
-      <header>
-          <nav>
-            <ul>
-              <li>ACCUEIL</li>
-              <li>PRODUITS</li>
-              <li>VALEURS</li>
-              <li>HISTOIRE</li>
-            </ul>
-          </nav>
-        </header>
         <main>
+            <nav id="nav">
+                <ul>
+                  <li>Produits</li>
+                  <li>Valeurs</li>
+                  <li>Histoire</li>
+                  <li>actualité</li>
+                </ul>
+                <div class="open" id="open">
+                  <div class="open-icon"></div>
+                </div>
+              </nav>
+          <header>
+            <img src="../../ressources/Images/Nissin-logo.svg" alt="Logo" class="logo">
+            <img src="../../ressources/Images/article-2/pub-nouilles.jpg" alt="Publicité nouilles" class="ad">
+          </header>
           <article>
-            <div class="entete-article">
+            <div class="title">
               <h1>NISSIN: L'EMPIRE DE LA NOUILLE</h1>
+              <svg width="320" height="78" viewBox="0 0 320 78" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M-45 6.10352e-05C-45 20.6869 -23.1911 40.5265 15.6289 55.1543C54.4489 69.7822 107.1 78 162 78C216.9 78 269.551 69.7821 308.371 55.1543C347.191 40.5265 369 20.6869 369 1.35484e-05L162 2.9822e-05L-45 6.10352e-05Z" fill="#FF0000"/>
+              <path d="M313.017 35.1153L312.88 35.2116C311.098 36.425 310.329 37.0689 310.329 38.2328L306.834 38.2328C306.834 34.9268 309.222 33.2056 310.993 32.0417C312.763 30.8779 313.544 30.2092 313.544 29.0576C313.544 27.9062 312.752 27.2375 310.993 25.9993L310.927 25.9527C309.174 24.7198 306.834 23.0731 306.834 19.8083L306.834 19.6597C306.834 19.6307 306.833 19.6018 306.834 19.5731C306.875 16.3236 309.238 14.6222 310.993 13.4687C312.764 12.3048 313.544 11.6361 313.544 10.4845C313.544 9.33306 312.752 8.66439 310.993 7.4262L310.927 7.37965C309.174 6.14675 306.834 4.50001 306.834 1.23521L306.834 1.00002L310.329 0.999992C310.325 1.07829 310.325 1.15688 310.329 1.23518C310.329 2.38678 311.121 3.01826 312.88 4.25645L313.017 4.35304C314.761 5.57808 317.039 7.17826 317.039 10.4474C317.039 13.7165 314.761 15.3169 313.017 16.5422L312.88 16.6385C311.098 17.852 310.329 18.4958 310.329 19.6597H310.326C310.325 19.7093 310.326 19.7588 310.329 19.8083C310.329 20.9599 311.121 21.5914 312.88 22.8295L313.017 22.9261C314.761 24.1512 317.039 25.7514 317.039 29.0205C317.039 32.2896 314.761 33.89 313.017 35.1153Z" fill="#FAAD1C"/>
+              <path d="M301.6 35.1154L301.463 35.2117C299.704 36.4252 298.912 37.0691 298.912 38.2329L295.417 38.2329C295.417 34.8774 297.805 33.2057 299.576 32.0419C301.347 30.878 302.127 30.1721 302.127 29.0207C302.127 27.8691 301.335 27.2376 299.576 25.9994L299.51 25.9528C297.757 24.7199 295.417 23.0732 295.417 19.8084L295.417 19.6598L295.417 19.6308C295.417 19.6116 295.417 19.5924 295.417 19.5732C295.458 16.2755 297.821 14.6225 299.576 13.4688C301.347 12.3049 302.127 11.599 302.127 10.4476C302.127 9.29599 301.335 8.6645 299.576 7.42631L299.51 7.37976C297.758 6.14686 295.417 4.50012 295.417 1.23532L295.417 1.00013L298.912 1.0001C298.911 1.02534 298.91 1.05074 298.91 1.07613C298.909 1.09003 298.909 1.10394 298.909 1.11784C298.909 1.15699 298.91 1.19614 298.912 1.23529C298.912 2.38688 299.704 3.01838 301.463 4.25656L301.601 4.35315C303.345 5.57819 305.622 7.17837 305.622 10.4476C305.622 13.7166 303.345 15.317 301.6 16.5423L301.463 16.6386C299.704 17.8521 298.912 18.496 298.912 19.6598H298.909C298.909 19.7094 298.909 19.759 298.912 19.8084C298.912 20.96 299.704 21.5915 301.463 22.8297L301.601 22.9262C303.345 24.1513 305.622 25.7515 305.622 29.0206C305.622 32.2897 303.344 33.8901 301.6 35.1154Z" fill="#FAAD1C"/>
+              <path d="M290.047 35.2118L290.184 35.1155C291.928 33.8902 294.205 32.2898 294.206 29.0208C294.206 25.7516 291.928 24.1514 290.184 22.9263L290.047 22.8298C288.288 21.5916 287.495 20.9601 287.495 19.8085C287.493 19.7591 287.492 19.7095 287.493 19.6599H287.495C287.495 18.4961 288.276 17.8522 290.047 16.6387L290.184 16.5424C291.928 15.3171 294.206 13.7167 294.206 10.4477C294.206 7.17848 291.928 5.57829 290.184 4.35325L290.047 4.25667C288.288 3.01848 287.496 2.38699 287.496 1.23539C287.491 1.1571 287.491 1.0785 287.496 1.00021L284.001 1.00024L284.001 1.23543C284.001 4.50023 286.341 6.14697 288.093 7.37987L288.16 7.42642C289.919 8.66461 290.711 9.2961 290.711 10.4477C290.711 11.5991 289.93 12.305 288.159 13.4689C286.404 14.6226 284.041 16.2756 284 19.5733C284 19.6021 284 19.6309 284 19.6599L284 19.8085C284 23.0733 286.341 24.7201 288.093 25.953L288.159 25.9995C289.918 27.2377 290.711 27.8692 290.711 29.0208C290.711 30.1722 289.93 30.8781 288.159 32.042C286.389 33.2058 284 34.8775 284 38.233L287.495 38.233C287.495 37.0692 288.276 36.4253 290.047 35.2118Z" fill="#FAAD1C"/>
+              </svg>          
             </div>
+            <img src="../../ressources/Images/article-2/pub-nouilles.jpg" alt="">
             <h2>Il s’en vend presque 100 milliards de portions dans le monde chaque année. Pourtant, ce nom ne vous dit sans doute rien. Momofuku Ando a bâti Nissin, un véritable empire qui réalise un chiffre d’affaires de presque 4 milliards d’euros… Un sujet The Good Life… passionnant !</h2>
             <p>Le bol Nissin est vendu à un prix modique, mais il vaut de l’or. Dans les rayons des supérettes et supermarchés japonais où il est omniprésent, le Cup Noodles se monnaie 1 euro à peine. En France, il est commercialisé sous le nom discret de « nouilles japonaises » à moins de 3 euros. Tous contiennent des ramen instantanés, des pâtes de blé qui se dégustent dans un bouillon, inventées il y a près de soixante ans et devenues l’ordinaire des étudiants sans le sou, des maris esseulés et des salariés pressés.</p>
             <figure>
-              <img src="../../Ressources/Images/Article 2/createur.jpg" alt="Momofuku Andō tenant une cup de noodles"/>
+              <img src="../../ressources/Images/article-2/createur.jpg" alt="Momofuku Andō tenant une cup de noodles"/>
               <figcaption>Momofuku Andō, créateur de Nissin, à la cup noodle factory</figcaption>
             </figure>
             <p>Un petit creux ? « Soulevez le couvercle, versez de l’eau chaude et, trois minutes plus tard, les pâtes sont prêtes », résume Daisuke Okabayashi, du département des relations publiques à Tokyo. Les nouilles lyophilisées de Nissin ont révolutionné les habitudes alimentaires de l’Archipel et sont consommées désormais partout sur la planète.</p>
             <p> Selon une enquête menée en 2000 par l’institut de recherche Mizuho, elles trônent en tête des meilleures inventions nippones du XXe siècle, devant les baladeurs, les CD ou les jeux vidéo. Plus de 5 milliards de récipients et de sachets sont vendus chaque année au Japon, près de 100 milliards à travers le monde – Chine et Indonésie en tête.</p>
             <p>Nissin Foods Group, le pionnier, reste le leader mondial, en dépit des multiples et incessantes imitations. La petite entreprise, fondée en 1948 à Ikeda, dans la préfecture d’Osaka, compte désormais 11 710 employés répartis sur 43 sites et 19 pays. Un empire bâti sur des nouilles. Au rez-de-chaussée du musée de Yokohama, un Cup Noodles à taille humaine trône en solitaire dans un vaste hall d’un blanc immaculé. Un escalier en bois clair invite le visiteur à prendre la pose, puis à gravir les cinq étages de ce temple à la gloire de Momofuku Ando, le fondateur du Nissin Foods Group. Une mise en scène moderne et didactique, des lignes épurées… 10 000 m2 conçus par Kashiwa Sato, l’un des directeurs artistiques les plus réputés au Japon, concepteur, notamment, du logo d’Uniqlo. Et soudain, apparaît une petite cahute en bois reconstituée pour mieux raconter les débuts de la firme.</p>
             <figure>
-              <img src="../../Ressources/Images/Article 2/cupnoddle-vitrine.jpg" alt="cup noodles dans une vitrine"/>
-              <figcaption>Cup noodles exposées au musée « Momofuku Ando Instant Ramen » à Ikeda, préfecture d’Osaka.</figcaption>
+              <img src="../../ressources/Images/article-2/cupnoddle-vitrine.jpg" alt="cup noodles dans une vitrine"/>
+              <figcaption>Cup noodles exposées au musée « Momofuku Ando Instant Ramen ».</figcaption>
             </figure>
             <p>Nissin, la naissance du fast-food nippon
             Tout a commencé au lendemain de la Seconde Guerre mondiale, pendant la période de restriction alimentaire. Voyant les longues files d’attente, en plein hiver, pour un simple bol de ramen, Momofuku Ando réalise l’énorme potentiel de ce plat auprès des Japonais. En cette période d’occupation (1945-1952), le riz manque encore, et le gouvernement recommande la consommation de blé fourni par les Américains, mais celle-ci se fait alors principalement sous forme de biscuits ou de pain.</p>
             <p>Quand sa banque fait faillite, Momofuku Ando décide de se consacrer à son idée : « des ramen qui peuvent être rapidement préparés et mangés à la maison avec seulement de l’eau chaude ». Il construit une petite maison en bois dans l’arrière-cour de sa maison, à Ikeda, et réunit quatre grands ingrédients : farine de blé, eau, sel et kansui, une eau minérale alcaline qui donne aux pâtes leur teinte dorée, leur texture plus ferme et plus élastique. La légende véhiculée par Nissin parle d’un an de labeur où « il ne dort que quatre heures par nuit et où chaque jour est une lutte désespérée ».</p>
             <p>Toute la famille met la main à la pâte. Après de multiples essais infructueux, il comprend, en observant sa femme cuisiner des tempura (des beignets de légumes, de poisson…), qu’il faut frire les pâtes dans un bain d’huile à 160 °C pour les assécher. L’eau s’évapore, laissant un grand nombre de porosités dans les nouilles, ce qui permet à ces dernières d’absorber facilement l’eau chaude que l’on versera plus tard pour qu’elles retrouvent leur consistance initiale.</p>
             <figure>
-              <img src="../../Ressources/Images/Article 2/noddles.jpg" alt="boite de nouilles">
+              <img src="../../ressources/Images/article-2/noddles.jpg" alt="boite de nouilles">
             </figure>
             <p>De plus, cette technique assure la conservation du plat pendant six mois à température ambiante, puisque l’absence d’humidité empêche le développement de micro-organismes. En 1958, à 48 ans, Momofuku Ando lance les chicken ramen, des nouilles séchées au poulet. Ce produit non périssable, économique et facile à préparer décroche le surnom de « magic food ». Le succès est fulgurant, le fast-food nippon est né. En 1971, seconde révolution. Alors qu’il fait une démonstration aux Etats-Unis, Momofuku Ando a la surprise d’observer des acheteurs briser les nouilles séchées, les mettre dans une tasse en papier, verser dessus de l’eau chaude et les manger avec une fourchette. Il a dès lors l’idée d’un nouveau conditionnement : un récipient jetable en polystyrène qui sert à la fois d’emballage et de bol pour ses nouilles instantanées. Baptisé Cup Noodles, le duo est proposé à 100 yens, soit quatre fois plus cher que la version en sachet. Beaucoup de gens doutent de son succès.</p>
           </article>
