@@ -1,6 +1,6 @@
 @font-face {
    font-family: greycliff;
-   src: url(../ressources/fonts/greycliffcf-regular-webfont.woff2);
+   src: url(../ressources/fonts/GreycliffCF-Regular.woff);
 }
 @font-face {
  font-family: cubano;
@@ -36,7 +36,7 @@ header img.logo {
 }
 
 svg {
-   min-width: 100vw;
+  min-width: 100vw;
 }
 
 h2 {
@@ -57,7 +57,7 @@ div.title h1 {
    position: absolute;
    color: white;
    letter-spacing: 1px;
-   font-size: 18px;
+   font-size: 17px;
    max-width: 80vw;
 }
 
