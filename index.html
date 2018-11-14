@@ -4,6 +4,7 @@
     <title>Nissin</title>
     <!-- STYLESHEETS A AJOUTER-->
     <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="shortcut icon" type="image/x-icon" href="Ressources/Images/logo-miniature.png"/>
     <!-- SCRIPTS A AJOUTER  -->
@@ -15,32 +16,34 @@
   <body>
     <header>
       <img class="logo" src="/Users/pro/Documents/Hetic/projets/hetic-w1p2021-20-calcium/Ressources/Images/Nissin-logo.svg" alt="logo nissin"/>
-      <div class="play-button"><img src="Ressources/Images/playmark.png" alt="play button"/></div>
-      <img class="placeholder" src="Ressources/Images/place-holder-video.png" alt="placeholder"/>
-      <!-- <iframe width="" height="" src="" 
-      frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-      </iframe> -->
+      <video autoplay loop muted poster="Ressources/Images/place-holder-video.png" id="bgvid">
+          <source src="Ressources/Images/samourai-noodles-video.mp4" type="video/mp4">
+        </video>
     </header>
     <main>
-      <article>
+      <article class="produit">
         <div class="titre">
         <h1><span>NOS</span></br>PRODUITS</h1>
-        <section>
+        </div>
+        <section class="soba">
+          <div>
           <img src="Ressources/Images/soba-teriyaki.png" alt="cups de soba"/>
-          <img src="Ressources/Images/produit-3-soba/soba-logo.png" alt="titre soba"/>
-
+          </div>
+          <img class="titre-produit" src="Ressources/Images/soba-titre-vertical.png" alt="titre soba"/>
         </section>
-        <section>
-          <img src="Ressources/Images/produit-2-ramen/logo-ramen.png" alt="titre ramen"/>
+        <section class="ramen">
+          <img class="titre-produit"  src="Ressources/Images/ramen-titre-vertical.png" alt="titre ramen"/>
           <img src="Ressources/Images/produit-2-ramen/ramen-sauce-soja.png" alt="sachet ramen"/>
         </section>
-        <section>
+        <section class="noodles">
           <img src="Ressources/Images/2-cup-noodles.png" alt="cup noodles"/>
-          <img src="Ressources/Images/produit-1-cup-noodle/nouilles-japonaises.png" alt="titre noodles"/>
+          <img class="titre-produit" src="Ressources/Images/nouilles-titre-vertical.png" alt="titre noodles"/>
         </section>
       </article>
-      <article>
+      <article class="valeurs">
+          <div class="titre">
           <h1><span>NOS</span></br>VALEURS</h1>
+          </div>
           <section>
             <h2>LA QUALITÉ NISSIN</h2>
             <p>Des produits qui respecten de façon stricte les normes internationales de la sécurité et l'hygiène alimentaire.</p>
@@ -56,50 +59,64 @@
             <p>Produits sans OGM</p>
           </section>
       </article>
-      <article>
-        <h1><span>NOTRE</span></br>HISTOIRE</h1>
-        <section>
-          <div class="point"></div>
-          <h3>1945:</h3>
-          <p>Création de la société</p>
-        </section>
-        <section>
-          <div class="point"></div>
-          <h3>1958:</h3>
-          <p>Commercialisation des premières nouilles instantanée au monde "Nissin's Chicken Ramen"</p>
-        </section>
-        <section>
-          <div class="point"></div>
-          <h3>1971:</h3>
-          <p>Création de la marque "Cup Noodles" & création de Nissin Foods USA</p>
-        </section>
-        <section>
-          <div class="point"></div>
-          <h3>1993:</h3>
-          <p>Arrivée sur le marché européen</p>
-        </section>
-        <section>
-          <div class="point"></div>
-          <h3>2005:</h3>
-          <p>Lancement des "Spaces Ramen" conçues pour les astronautes</p>
-        </section>
-        <section>
-          <div class="point"></div>
-          <h3>2012:</h3>
-          <p>Lancement d'une nouvelle gamme de produits en Europe : les nouilles Soba</p>
-        </section>
-        <section>
-          <div class="point"></div>
-          <h3>2017:</h3>
-          <p>Ouverture d'une usine en Europe</p>
-        </section>
+      <article class="histoire">
+        <div class="titre">
+          <h1><span>NOTRE</span></br>HISTOIRE</h1>
+        </div>
+        <div class="timeline">
+          <section>
+            <div class="point"></div>
+            <div class="date-explain">
+              <h3>1945:</h3>
+              <p>Création de la société</p>
+            </div>
+          </section>
+          <section>
+            <div class="point"></div>
+            <div class="date-explain">  
+              <h3>1958:</h3>
+              <p>Commercialisation des premières nouilles instantanée au monde "Nissin's Chicken Ramen"</p>
+            </div>
+          </section>
+          <section>
+            <div class="point"></div>
+            <div class="date-explain">
+              <h3>1971:</h3>
+              <p>Création de la marque "Cup Noodles" & création de Nissin Foods USA</p>
+            </div>
+          </section>
+          <section>
+            <div class="point"></div>
+            <div class="date-explain">
+              <h3>1993:</h3>
+              <p>Arrivée sur le marché européen</p>
+            </div>
+          </section>
+          <section>
+            <div class="point"></div>
+            <div class="date-explain">
+              <h3>2005:</h3>
+              <p>Lancement des "Spaces Ramen" conçues pour les astronautes</p>
+            </div>
+          </section>
+          <section>
+            <div class="point"></div>
+            <div class="date-explain">
+              <h3>2012:</h3>
+              <p>Lancement d'une nouvelle gamme de produits en Europe : les nouilles Soba</p>
+            </div>
+          </section>
+          <section>
+            <div class="point"></div>
+            <div class="date-explain">
+              <h3>2017:</h3>
+              <p>Ouverture d'une usine en Europe</p>
+            </div>
+          </section>
+        </div>
       </article>
-      <article>
-        <!-- <section>
-          <img src="" alt="Photo de membre de l'association mondiale des nouilles"/>
-          <h2>Envoi de Ramen aux victimes du tremblement de terre et du Tsunami</h2>
-          <div class="bordure"></div>
-        </section> -->
+      <article class="actu">
+        <h1 class="titre">ACTUALITÉ</h1>
         <section>
           <img src="Ressources/Images/article-1/article-1.png" alt="Visiteurs au musée Momofuku Ando Instant Ramen à Ikeda, préfecture d’Osaka"/>
           <h2>Nissin : l'empire de la nouille</h2>
