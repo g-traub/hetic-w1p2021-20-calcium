@@ -52,11 +52,7 @@ a:hover, a h2:hover, .actu img:hover{
   z-index: 100;
   width: 180px;
 }
-.logo-bar{
-  transform: scale(0.9);
-  position: fixed;
-  top :-5px;
-}
+
 .titre{
   display: flex;
   flex-direction: column;
@@ -85,6 +81,11 @@ a:hover, a h2:hover, .actu img:hover{
 }
 section.ramen{
   background-color: white;
+}
+.ramen, .noodles, .soba{
+  opacity: 0;
+  transform: scale(1.4);
+  transition: all 0.4s;
 }
 
 .titre-produit{
@@ -187,6 +188,11 @@ margin: 15px;
   background-size: cover; */
 }
 
+.reached{
+  opacity:1;
+  transform: none;
+}
+
 @media (min-width: 700px){
   .titre-produit{
     height: auto;
@@ -213,6 +219,7 @@ margin: 15px;
     transform: scale(1.2);
   }
 }
+
 
 @media (min-width: 900px){
   #bgvid{

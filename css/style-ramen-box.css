@@ -6,11 +6,13 @@
 
 /* ramen menu mobile */
 nav{
-z-index: 100;
+z-index: 99;
 }
  
 .logo-bar{
   display: none;
+  position: absolute;
+  width: 180px;
 }
 
 #kapa {
@@ -145,12 +147,6 @@ li {
   background-color: black;
   }
   
-/* li:hover {
-  cursor: pointer;
-  background-color: white;
-  color: black;
-} */
-
   .open-menu {
     display: none;
   }

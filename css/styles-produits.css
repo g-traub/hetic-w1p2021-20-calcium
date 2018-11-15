@@ -23,6 +23,9 @@ h1{
   transform: translateX(-10vh)
 }
 .logo{
+  position: absolute;
+  top:0px;
+  z-index: 100;
   width: 180px;
   height: 90px;
 }
@@ -51,6 +54,7 @@ p{
 header{
   display: flex;
   justify-content: center;
+  margin-bottom:100px;
 }
 h2{
   display:flex;
