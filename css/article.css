@@ -29,6 +29,10 @@ img {
   max-width: 100vw;
 }
 
+img.ad {
+  min-width: 100vw;
+}
+
 article img{
   max-height: 50vh;
 }
@@ -98,6 +102,9 @@ figcaption {
 .titre{
   font-size: 30px;
 }
+article {
+  max-width: 95vw;
+}
  article p {
    font-size: 23px;
    margin-bottom: 25px;
@@ -115,7 +122,10 @@ article:not(div:first-of-type){
 }
 .pic {
   display: flex;
-  align-items: baseline;
+  align-items: center;
+}
+.pic p {
+  line-height: 30px;
 }
 .pic img {
   max-width: 45vw;
