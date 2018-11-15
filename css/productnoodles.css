@@ -11,6 +11,11 @@ body{
   margin: 0 20px;
 }
 
+header{
+  display: flex;
+  justify-content: center;
+}
+
 h1{
   font-family: 'LemonYellowSun';
   font-size: 70px;
@@ -19,39 +24,6 @@ h1{
   
 }
 
-.timer{
-  transform: translateX(-10vh)
-}
-.logo{
-  width: 180px;
-  height: 90px;
-}
-
-.bottom-page img{
-  align-self: flex-end;
-}
-.bottom-page{
-  text-align: center;
-  margin-bottom:30px;
-}
-.description{
-  display: -webkit-flex;
-  display: flex;
-  -webkit-flex-direction: column;
-  flex-direction: column;
-}
-p{
-  margin-bottom: 25px;
-  font-size: 30px;
-  text-align: center;
-}
-.bottom-page p{
-  font-size: 20px;
-}
-header{
-  display: flex;
-  justify-content: center;
-}
 h2{
   display:flex;
   font-size: 30px;
@@ -60,6 +32,42 @@ h2{
   background-size: 50%;
   justify-content: center;
 }
+
+p{
+  margin-bottom: 25px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.timer{
+  transform: translateX(-10vh)
+}
+
+.logo{
+  width: 180px;
+  height: 90px;
+}
+
+.bottom-page{
+  text-align: center;
+  margin-bottom:30px;
+}
+
+.bottom-page p{
+  font-size: 20px;
+}
+
+.bottom-page img{
+  align-self: flex-end;
+}
+
+.description{
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+}
+
 
 .product{
   display: flex;
@@ -80,6 +88,7 @@ h2{
   body{background: url("../Ressources/Images/produit-1-cup-noodle/noodles-bg.svg") no-repeat top left,
     url("../Ressources/Images/produit-1-cup-noodle/Ellipse-bg.svg") no-repeat top right;
   }
+
   .product{
     background: url("../Ressources/Images/produit-3-soba/soba-yakisoba-300.png")no-repeat 10% center,
     url("../Ressources/Images/produit-3-soba/soba-yakisoba-300.png")no-repeat center right 5%;
@@ -89,6 +98,7 @@ h2{
     flex-shrink:1;
   }
 }
+
 @media(min-width:900px){
   .product{
     background: url("..//Ressources/Images/produit-1-cup-noodle/crevettes.png") no-repeat 30% center,
@@ -96,6 +106,7 @@ h2{
     url("../Ressources/Images/produit-1-cup-noodle/champignons.png")no-repeat 5% center,
     url("../Ressources/Images/produit-1-cup-noodle/epice.png")no-repeat center right 5%;
   }
+
   .description{
     -webkit-flex-direction: row;
     flex-direction: row; 
@@ -107,5 +118,4 @@ h2{
     min-width: 337px;
     margin-left: 30px;
   }
-  
 }
