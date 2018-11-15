@@ -104,8 +104,8 @@ h2{
 
 @media(min-width:1100px){
   .product{
-    background: url("..//Ressources/Images/produit-2-ramen/ramen-boeuf-épicé-300.png") no-repeat 30% center,
-    url("..//Ressources/Images/produit-2-ramen/ramen-boeuf-épicé-300.png") no-repeat center right 30%,
+    background: url("..//Ressources/Images/produit-2-ramen/ramen-boeuf-epice-300.png") no-repeat 30% center,
+    url("..//Ressources/Images/produit-2-ramen/ramen-boeuf-epice-300.png") no-repeat center right 30%,
     url("../Ressources/Images/produit-2-ramen/ramen-kimchi-300.png")no-repeat 5% center,
     url("../Ressources/Images/produit-2-ramen/ramen-kimchi-300.png")no-repeat center right 5%;
   }
