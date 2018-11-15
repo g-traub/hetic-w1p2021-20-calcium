@@ -8,6 +8,10 @@
 nav{
 z-index: 100;
 }
+ 
+.logo-bar{
+  display: none;
+}
 
 #kapa {
   transform: rotate(180deg);
@@ -25,12 +29,16 @@ nav {
   bottom: 0 ;
   display: flex;
   width: 100vw;
-  height: 32vh;
+  height: 33vh;
   color: black;
   transform: translateY(25vh);
   transition: opacity 0.3s, transform 0.2s ;
+  display: flex;
+  justify-content: center;
 }
-
+nav li:nth-of-type(3), nav li:nth-of-type(4){
+  text-align: right;
+}
 .cake {
   opacity: 0;
 }
@@ -43,12 +51,13 @@ nav {
   align-items: center;
   cursor: pointer;
   margin-bottom: 1vh;
+  margin-top: 45px;
 }
 
 li {
   margin-top: 5px;
-  font-size: 8vw;
-  padding-top: 13px;
+  font-size: 28px;
+  flex-grow: 1;
 }
 
 li:hover {
@@ -56,10 +65,9 @@ li:hover {
 }
 
 .open-menu {
+  width: 100vw;
   position: fixed;
   cursor: pointer;
-  margin-right: 45vw;
-  margin-left: 45vw;
   height: 50px;
   width: 50px;
 }
@@ -79,6 +87,8 @@ li:hover {
 .is-open {
   transform: none;
   background-color: white;
+  display: flex;
+  justify-content: center;
 }
 
 .menu-icon svg {
@@ -89,6 +99,9 @@ li:hover {
 @media (min-width: 960px) {
 
 /* ramen menu desktop */
+.logo-bar{
+  display: block;
+}
 
 nav {
   top: 0;
@@ -125,7 +138,8 @@ li {
   font-size: 1.2vw;
   color: white;
   text-transform: uppercase;
-  font-family: Helvetica;
+  font-family: 'Greycliff CF';
+  font-weight: 900;
   padding: 10px;
   background-color: black;
   }

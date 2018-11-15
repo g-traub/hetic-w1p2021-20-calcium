@@ -46,10 +46,14 @@ h3{
 .logo{
   position: absolute;
   top:0px;
-  z-index: 3;
+  z-index: 100;
   width: 180px;
 }
-
+.logo-bar{
+  transform: scale(0.9);
+  position: fixed;
+  top :0px;
+}
 .titre{
   display: flex;
   flex-direction: column;
@@ -217,6 +221,12 @@ margin: 15px;
 @media (min-width: 1000px){
   .valeurs .titre, .actu .titre, .titre{
     border-radius: 0;
+  }
+  
+  .titre{
+    background-image: url("../Ressources/Images/nouilles-cotes-bg.svg");
+    background-repeat: no-repeat;
+    background-position: top left 50px;
   }
 
   .produit{
