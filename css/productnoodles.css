@@ -15,7 +15,7 @@ h1{
   font-family: 'LemonYellowSun';
   font-size: 70px;
   margin: -20% 0 30px 0;
-  transform: translateY(-10vh) translateX(10vh)
+  transform: translateY(-5vh) translateX(10vh)
   
 }
 
@@ -91,10 +91,10 @@ h2{
 }
 @media(min-width:900px){
   .product{
-    background: url("..//Ressources/Images/produit-3-soba/soba\ chili\ 350.png") no-repeat 30% center,
-    url("..//Ressources/Images/produit-3-soba/soba\ chili\ 350.png") no-repeat center right 30%,
-    url("../Ressources/Images/produit-3-soba/soba-yakisoba-300.png")no-repeat 5% center,
-    url("../Ressources/Images/produit-3-soba/soba-yakisoba-300.png")no-repeat center right 5%;
+    background: url("..//Ressources/Images/produit-1-cup-noodle/crevettes.png") no-repeat 30% center,
+    url("..//Ressources/Images/produit-1-cup-noodle/poulet.png") no-repeat center right 30%,
+    url("../Ressources/Images/produit-1-cup-noodle/champignons.png")no-repeat 5% center,
+    url("../Ressources/Images/produit-1-cup-noodle/epice.png")no-repeat center right 5%;
   }
   .description{
     -webkit-flex-direction: row;
