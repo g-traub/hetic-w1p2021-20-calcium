@@ -12,7 +12,11 @@ nav {
   height: 57vh;
   color: black;
   transform: translateY(50vh);
-  transition: transform 0.3s;
+  transition: opacity 0.3s, transform 0.2s ;
+}
+
+.cake {
+  opacity: 0;
 }
 
 .list {
@@ -42,10 +46,6 @@ li {
   position: absolute;
 }
 
-.menu-icon svg{
-  opacity: 1;
-}
-
 .menu-icon svg.transparent{
   opacity: 0;
 }
@@ -56,4 +56,13 @@ li {
 }
 .is-open {
   transform: none;
+}
+
+.menu-icon svg {
+  width: 40px;
+  height: 40px;
+}
+
+#kapa {
+  transform: rotate(180deg);
 }
