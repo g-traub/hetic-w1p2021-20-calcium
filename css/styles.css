@@ -43,6 +43,10 @@ h3{
   font-family: "LemonYellowSun";
   font-size: 28px;
 }
+a:hover{
+  transform: scale(1.1);
+}
+
 .logo{
   position: absolute;
   top:0px;
@@ -52,7 +56,7 @@ h3{
 .logo-bar{
   transform: scale(0.9);
   position: fixed;
-  top :0px;
+  top :-5px;
 }
 .titre{
   display: flex;
@@ -221,12 +225,6 @@ margin: 15px;
 @media (min-width: 1000px){
   .valeurs .titre, .actu .titre, .titre{
     border-radius: 0;
-  }
-  
-  .titre{
-    background-image: url("../Ressources/Images/nouilles-cotes-bg.svg");
-    background-repeat: no-repeat;
-    background-position: top left 50px;
   }
 
   .produit{

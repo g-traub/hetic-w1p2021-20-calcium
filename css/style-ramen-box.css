@@ -61,7 +61,7 @@ li {
 }
 
 li:hover {
-  text-decoration: rgba(255, 208, 0, 0.849) wavy underline ;
+  color:#FF0000;
 }
 
 .open-menu {
@@ -140,15 +140,16 @@ li {
   text-transform: uppercase;
   font-family: 'Greycliff CF';
   font-weight: 900;
-  padding: 10px;
+  padding: 25px;
+  margin:0 20px;
   background-color: black;
   }
   
-li:hover {
+/* li:hover {
   cursor: pointer;
   background-color: white;
   color: black;
-}
+} */
 
   .open-menu {
     display: none;
