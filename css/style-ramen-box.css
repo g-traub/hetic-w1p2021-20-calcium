@@ -6,7 +6,7 @@
 
 /* ramen menu mobile */
 nav{
-z-index: 100;
+  z-index: 100;
 }
  
 .logo-bar{
@@ -97,52 +97,51 @@ li:hover {
 }
 
 @media (min-width: 960px) {
-
 /* ramen menu desktop */
-.logo-bar{
-  display: block;
-}
+  .logo-bar{
+    display: block;
+  }
 
-nav {
-  top: 0;
-  left: 0;
-  border-radius: 0;
-  width: 100% ;
-  position: fixed ;
-  bottom: 15px ;
-  background-color: black;
-  opacity: 8;
-  height: 70px;
-  overflow: hidden;
-  box-shadow: none;
-  transform: none;
+  nav {
+    top: 0;
+    left: 0;
+    border-radius: 0;
+    width: 100% ;
+    position: fixed ;
+    bottom: 15px ;
+    background-color: black;
+    opacity: 8;
+    height: 70px;
+    overflow: hidden;
+    box-shadow: none;
+    transform: none;
   }
-  
-ul {
-  list-style: none;
-  display: flex;
-  top: 0;
-  left: 0;
-  align-items: center;
-  width: 100vw;
-  position: static;
-  opacity: 1;
-  transform: none;
-  height: 80%;
-  flex-direction: row;
-  justify-content: space-around;
+    
+  ul {
+    list-style: none;
+    display: flex;
+    top: 0;
+    left: 0;
+    align-items: center;
+    width: 100vw;
+    position: static;
+    opacity: 1;
+    transform: none;
+    height: 80%;
+    flex-direction: row;
+    justify-content: space-around;
   }
-  
-li {
-  margin-bottom: 0;
-  font-size: 1.2vw;
-  color: white;
-  text-transform: uppercase;
-  font-family: 'Greycliff CF';
-  font-weight: 900;
-  padding: 25px;
-  margin:0 20px;
-  background-color: black;
+    
+  li {
+    margin-bottom: 0;
+    font-size: 1.2vw;
+    color: white;
+    text-transform: uppercase;
+    font-family: 'Greycliff CF';
+    font-weight: 900;
+    padding: 25px;
+    margin:0 20px;
+    background-color: black;
   }
   
 /* li:hover {
