@@ -1,0 +1,147 @@
+* {
+  box-sizing: border-box;
+}
+
+/* ramen box */
+
+/* ramen menu mobile */
+nav{
+z-index: 100;
+}
+
+#kapa {
+  transform: rotate(180deg);
+  min-width: 40px;
+  max-width: 40px;
+}
+
+#kappa {
+  min-width: 40px;
+  max-width: 40px;
+}
+
+nav {
+  position: fixed;
+  bottom: 0 ;
+  display: flex;
+  width: 100vw;
+  height: 32vh;
+  color: black;
+  transform: translateY(25vh);
+  transition: opacity 0.3s, transform 0.2s ;
+}
+
+.cake {
+  opacity: 0;
+}
+
+.list {
+  display: flex;
+  list-style: none;
+  flex-grow: 1;
+  flex-direction: column-reverse;
+  align-items: center;
+  cursor: pointer;
+  margin-bottom: 1vh;
+}
+
+li {
+  margin-top: 5px;
+  font-size: 8vw;
+  padding-top: 13px;
+}
+
+li:hover {
+  text-decoration: rgba(255, 208, 0, 0.849) wavy underline ;
+}
+
+.open-menu {
+  position: fixed;
+  cursor: pointer;
+  margin-right: 45vw;
+  margin-left: 45vw;
+  height: 50px;
+  width: 50px;
+}
+.menu-icon svg {
+  position: absolute;
+  cursor: pointer;
+}
+
+.menu-icon svg.transparent{
+  opacity: 0;
+}
+
+.menu-opener {
+  position: fixed;
+  width: 8vw;
+}
+.is-open {
+  transform: none;
+  background-color: white;
+}
+
+.menu-icon svg {
+  width: 40px;
+  height: 40px;
+}
+
+@media (min-width: 960px) {
+
+/* ramen menu desktop */
+
+nav {
+  top: 0;
+  left: 0;
+  border-radius: 0;
+  width: 100% ;
+  position: fixed ;
+  bottom: 15px ;
+  background-color: black;
+  opacity: 8;
+  height: 70px;
+  overflow: hidden;
+  box-shadow: none;
+  transform: none;
+  }
+  
+ul {
+  list-style: none;
+  display: flex;
+  top: 0;
+  left: 0;
+  align-items: center;
+  width: 100vw;
+  position: static;
+  opacity: 1;
+  transform: none;
+  height: 80%;
+  flex-direction: row;
+  justify-content: space-around;
+  }
+  
+li {
+  margin-bottom: 0;
+  font-size: 1.2vw;
+  color: white;
+  text-transform: uppercase;
+  font-family: Helvetica;
+  padding: 10px;
+  background-color: black;
+  }
+  
+li:hover {
+  cursor: pointer;
+  background-color: white;
+  color: black;
+}
+
+  .open-menu {
+    display: none;
+  }
+  
+  .list {
+    flex-direction: row;
+    margin-top: 0;
+  }  
+}
