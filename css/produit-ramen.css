@@ -83,8 +83,8 @@
       url("../Ressources/Images/produit-1-cup-noodle/Ellipse-bg.svg") no-repeat top right;
     }
     .product{
-      background: url("../Ressources/Images/produit-2-ramen/ramen\ kimchi\ 300.png")no-repeat 10% center,
-      url("../Ressources/Images/produit-2-ramen/ramen\ kimchi\ 300.png")no-repeat center right 5%;
+      background: url("../Ressources/Images/produit-2-ramen/ramen-kimchi-300.png")no-repeat 10% center,
+      url("../Ressources/Images/produit-2-ramen/ramen-kimchi-300.png")no-repeat center right 5%;
     }
   
     .text{
@@ -93,10 +93,10 @@
   }
   @media(min-width:1100px){
     .product{
-      background: url("..//Ressources/Images/produit-2-ramen/ramen\ boeuf\ épicé\ 300.png") no-repeat 30% center,
-      url("..//Ressources/Images/produit-2-ramen/ramen\ boeuf\ épicé\ 300.png") no-repeat center right 30%,
-      url("../Ressources/Images/produit-2-ramen/ramen\ kimchi\ 300.png")no-repeat 5% center,
-      url("../Ressources/Images/produit-2-ramen/ramen\ kimchi\ 300.png")no-repeat center right 5%;
+      background: url("..//Ressources/Images/produit-2-ramen/ramen-boeuf-épicé-300.png") no-repeat 30% center,
+      url("..//Ressources/Images/produit-2-ramen/ramen-boeuf-épicé-300.png") no-repeat center right 30%,
+      url("../Ressources/Images/produit-2-ramen/ramen-kimchi-300.png")no-repeat 5% center,
+      url("../Ressources/Images/produit-2-ramen/ramen-kimchi-300.png")no-repeat center right 5%;
     }
     .description{
       -webkit-flex-direction: row;
