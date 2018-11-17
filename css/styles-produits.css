@@ -19,6 +19,9 @@ h1{
   
 }
 
+a:hover{
+  transform:scale(1.01);
+}
 .timer{
   transform: translateX(-10vh)
 }

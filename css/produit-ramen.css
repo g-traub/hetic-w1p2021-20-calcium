@@ -28,7 +28,11 @@ p{
   font-size: 30px;
   text-align: center;
 }
-  
+
+a:hover{
+  transform:scale(1.01);
+}
+
 .timer{
   transform: translateX(-7vh) translateY(5vh)
 }
