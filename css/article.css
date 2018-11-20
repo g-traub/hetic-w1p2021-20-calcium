@@ -1,28 +1,33 @@
+@keyframes jump {
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
 * {
    box-sizing: border-box;
 }
 
 body{
   font-family: 'Greycliff CF';
+  line-height: 1.6;
 }
-
-.title{
+.titre{
   display: flex;
   justify-content: center;
-  align-items:center;
-  font-size: 18px;
-  background-color: #FF0000;
-  color: white;
-  border-bottom-left-radius : 300px 150px;
-  border-bottom-right-radius : 300px 150px;
-  height:100px;
-  width: 100vw;
+  background-color: #DA1D1F;
 }
-
 .titre h1{
-  max-width:75vw;
-  text-align: center;
   font-family: 'Cubano';
+  background-color: #DA1D1F;
+  color: white;
+  max-width:50vw;
+  font-size: 18px;
+  padding: 5px;
+  text-align: center;
+}
+.arrow{
+  display: none;
 }
 
 header {
@@ -92,22 +97,24 @@ figcaption {
   text-align: left;
   margin: 0 0 7px 20px;
 }
-
-@media (min-width: 800px){
-  .title{
-    border-radius : 0;
-    height:100px;
-    width: 100vw;
-    margin-top:-100px;
+@media (min-width: 580px){
+  .titre{
+    background-color: #DA1D1F;
+    color: white;
+  }
+  .titre h1{
+    font-size: 25px;
   }
 }
-
-@media (min-width: 1024px) {
-  .title{
-    font-size: 30px;
+@media (min-width: 1049px) {
+ .titre h1{
+    font-size: 38px;
+    position: absolute;
+    bottom: 30%;
   }
   article {
-    max-width: 95vw;
+    max-width: 80vw;
+    margin : 0 auto;
   }
   article p {
     font-size: 23px;
@@ -128,9 +135,7 @@ figcaption {
     display: flex;
     align-items: center;
   }
-  .pic p {
-    line-height: 30px;
-  }
+  
   .pic img {
     max-width: 45vw;
     align-self: center;
@@ -138,5 +143,21 @@ figcaption {
   h3 {
     font-size: 25px;
     font-weight: bold;
+  }
+}
+
+@media (min-width:1220px){
+  .arrow{
+    display: block;
+    position: absolute;
+    width: 150px;
+    fill: white;
+    bottom:-30%;
+    animation: 1s jump ease-out infinite;
+  }
+
+  .arrowDiv{
+    display: flex;
+    justify-content: center;
   }
 }
