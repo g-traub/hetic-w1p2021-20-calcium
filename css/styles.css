@@ -1,3 +1,9 @@
+@keyframes jump {
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
 *{
   box-sizing: border-box;
 }
@@ -65,7 +71,21 @@ a:hover, a h2:hover, .actu img:hover{
   width: 100vw;
   z-index: 5;
 }
+.arrowDiv{
+  display: flex;
+  justify-content: center;
+}
+.arrow{
+  position: absolute;
+  width: 150px;
+  fill: #FF0000;
+  bottom: -70px;
+  animation: 1s jump ease-out infinite;
+}
 
+#lien:hover{
+  transform: none;
+}
 .produit section{
   display: flex;
   align-items: center;

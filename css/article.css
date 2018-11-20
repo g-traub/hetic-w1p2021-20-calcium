@@ -7,11 +7,14 @@
 * {
    box-sizing: border-box;
 }
-
+html{
+  scroll-behavior: smooth;
+}
 body{
   font-family: 'Greycliff CF';
   line-height: 1.6;
 }
+
 .titre{
   display: flex;
   justify-content: center;

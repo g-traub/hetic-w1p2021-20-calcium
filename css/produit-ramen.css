@@ -40,6 +40,7 @@ a:hover{
 .logo{
   width: 180px;
   height: 90px;
+  z-index: 100;
 }
   
 .bottom-page img{
