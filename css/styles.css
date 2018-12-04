@@ -19,20 +19,24 @@ body{
   font-size: 18px;
   line-height: 130%;
 }
+
 header{
   display: flex;
   flex-direction: column;
   align-items: center;
   height: 90vh;
 }
+
 main{
   margin-top: -100px;
   position: relative;
-  z-index:1
+  z-index:1;
 }
+
 span{
   font-family: 'LemonYellowSun';
 }
+
 h1{
   font-family: 'Cubano';
   color: white;
@@ -50,6 +54,10 @@ h3{
 }
 a:hover, a h2:hover, .actu img:hover{
   transform: scale(1.01);
+}
+
+#lien{
+  scroll-behavior: smooth;
 }
 
 .logo{
@@ -86,6 +94,7 @@ a:hover, a h2:hover, .actu img:hover{
 #lien:hover{
   transform: none;
 }
+
 .produit section{
   display: flex;
   align-items: center;
@@ -93,6 +102,10 @@ a:hover, a h2:hover, .actu img:hover{
   background-color: #1C1C20;
   min-width: 200px;
   padding: 5% 0;
+}
+
+.noodles>h2, .ramen>h2, .soba>h2 {
+  display: none;
 }
 
 .produit .article-content{

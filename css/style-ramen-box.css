@@ -102,8 +102,12 @@ li:hover {
     top: 0;
     display: block;
     width: 180px;
+    padding: 0;
+    margin: 0 auto;
   }
+
   .logo-bar img{
+    margin: 0 auto;
     width: 180px;
   }
   
@@ -136,10 +140,11 @@ li:hover {
     flex-direction: row;
     justify-content: space-around;
   }
-    
-  li {
+  
+
+  a {
     margin-bottom: 0;
-    font-size: 1.2vw;
+    font-size: 1.5vw;
     color: white;
     text-transform: uppercase;
     font-family: 'Greycliff CF';
