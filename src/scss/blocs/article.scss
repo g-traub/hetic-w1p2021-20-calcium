@@ -33,12 +33,6 @@ body{
   display: none;
 }
 
-header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 img {
   max-width: 100vw;
 }
@@ -50,14 +44,6 @@ img.ad {
 article img{
   max-height: 50vh;
 }
-
-header img.logo {
-  z-index: 100;
-  position: absolute;
-  height: 90px;
-  width:180px;
-}
-
 h2 {
   color: black;
   margin: 20px 30px;

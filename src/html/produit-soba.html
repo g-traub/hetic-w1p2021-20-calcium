@@ -12,10 +12,10 @@
 </head>
 
 <body>
-  <header>
-    <nav id="menu">
-      <a class="logo-bar" href="index.html#">
-          <picture>
+  <header class="header">
+    <nav class="header__menu menu" id="menu">
+      <a class="menu__home" href="index.html#">
+          <picture class="menu__logo">
               <source type="image/webp"
                       srcset="../assets/img/WebP/200/Nissin-logo-red.webp 200w,
                               ../assets/img/WebP/500/Nissin-logo-red.webp 500w,
@@ -31,16 +31,16 @@
               alt="logo nissin" />
           </picture>
       </a>
-      <ul class="list">
-        <li><a href="index.html#produits">Produits</a></li>
-        <li><a href="index.html#valeurs">Valeurs</a></li>
-        <li><a href="index.html#histoire">Histoire</a></li>
-        <li><a href="index.html#actualites">Actualités</a></li>
+      <ul class="menu__items items">
+        <li class="items__item"><a href="index.html#produits">Produits</a></li>
+        <li class="items__item"><a href="index.html#valeurs">Valeurs</a></li>
+        <li class="items__item items__item--right"><a href="index.html#histoire">Histoire</a></li>
+        <li class="items__item items__item--right"><a href="index.html#actualites">Actualités</a></li>
       </ul>
-      <div class="open-menu" id="open-menu">
-        <div class="menu-icon">
+      <div class="menu--opener" id="open-menu">
+        <div class="menu__icon icon">
           <!--First image of ramen box-->
-          <svg id="kapa" class="transparent" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg"
+          <svg class="icon__kapa icon__kapa--open" id="kapa" class="transparent" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 466.73 510.99">
             <path class="cls-1"
               d="M481.13,30.18v94L284.55,217.7,75.84,124.17,442.13,2.07A29.58,29.58,0,0,1,481.13,30.18Z"
@@ -56,7 +56,7 @@
             <circle class="cls-4" cx="233.29" cy="306.11" r="140.22" />
           </svg>
           <!--Second image invisible before trigger-->
-          <svg id="kappa" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 501.82 416.42">
+          <svg class="icon__kapa icon__kapa--closed" id="kappa" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 501.82 416.42">
             <path class="cls-1"
               d="M481.77,81.08H389.82L62.63,465.66l1.72,10.7A25.14,25.14,0,0,0,89.17,497.5H422.83a25.14,25.14,0,0,0,24.82-21.14l58.94-366.15A25.14,25.14,0,0,0,481.77,81.08Z"
               transform="translate(-5.09 -81.08)" />
@@ -71,11 +71,11 @@
         </div>
       </div>
     </nav>
-    <svg id="logo-nissin" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#"
+    <svg class="menu__logo--red" id="logo-nissin" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#"
       xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg"
       xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
       xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-      xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" width="36.896149mm" height="18.449087mm"
+      xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
       viewBox="0 0 36.896149 18.449087" version="1.1" inkscape:version="0.92.3 (2405546, 2018-03-11)"
       sodipodi:docname="nissin.svg">
       <defs id="defs2">

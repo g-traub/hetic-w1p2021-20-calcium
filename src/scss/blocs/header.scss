@@ -1,0 +1,171 @@
+.header{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.menu__logo--red{
+  position: absolute;
+  top:0;
+  z-index: 100;
+  width: 180px;
+}
+
+/* ramen box */
+.cls-1 {
+  fill: #c1bdab;
+}
+
+.cls-2 {
+  fill: #d5d2bd;
+}
+
+.cls-3 {
+  fill: #e7e4cd;
+}
+
+.cls-4 {
+  fill: #bd7155;
+}
+
+/* ramen menu mobile */
+.header__menu{
+  z-index: 100;
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  width: 100vw;
+  color: black;
+  transform: translateY(200px);
+  transition: opacity 0.3s, transform 0.2s ;
+  justify-content: center;
+}
+ 
+.menu__home{
+  display: none;
+  img{
+    width: 180px;
+  }
+}
+
+.icon__kapa--open {
+  transform: rotate(180deg);
+}
+
+.icon__kapa {
+  width: 40px;
+}
+
+.cake {
+  opacity: 0;
+}
+
+.menu__items {
+  display: flex;
+  list-style: none;
+  line-height: 130%;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  width: 100vw;
+  margin-bottom: 10px;
+  margin-top: 60px;
+}
+
+
+.items__item{
+  flex-grow: 1;
+  padding: 10px;
+  a{
+    margin-top: 5px;
+    font-size: 30px;
+    &:hover{
+      color:#FF0000;
+    }
+  }
+}
+
+.menu--opener {
+  width: 50px;
+  height: 50px;
+  position:fixed;
+  cursor: pointer;
+}
+
+.menu__icon {
+  height: 100%;
+  svg {
+  position: absolute;
+  bottom: 0;
+  cursor: pointer;
+    &.transparent{
+      opacity: 0;
+    }
+  }
+}
+
+.is-open {
+  transform: none;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+}
+
+@media (min-width: 960px) {
+  /* ramen menu desktop */
+  .menu__home{
+    position: absolute;
+    top: 0;
+    display: block;
+    width: 180px;
+    padding: 0;
+    margin: 0 auto;
+  }
+
+  .header__menu {
+    top: 0;
+    left: 0;
+    position: fixed ;
+    background-color: black;
+    height: 70px;
+    overflow: hidden;
+    transform: none;
+  }
+    
+  .menu__items{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    position: static;
+    opacity: 1;
+    transform: none;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 0;
+  }
+  
+
+  .items__item a{
+    margin-bottom: 0;
+    font-size: 1.5vw;
+    color: white;
+    text-transform: uppercase;
+    font-family: 'Greycliff CF';
+    font-weight: 900;
+    padding: 25px;
+    margin:0 20px;
+    background-color: black;
+  }
+  
+  .menu--open {
+    display: none;
+  }
+
+  .is-open{
+    background-color: black;
+  }
+
+  .items__item--right{
+    text-align: right;
+  } 
+}
