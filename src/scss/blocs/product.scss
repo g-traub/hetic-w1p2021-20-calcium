@@ -1,0 +1,106 @@
+.product{
+  padding-top: 100px;
+  background: url("../assets/img/noodles-bg.svg") no-repeat top left, url("../assets/img/Ellipse-bg.svg") no-repeat top right;
+}
+.product__images{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.images__logo{
+  img{
+    width: 300px;
+  }
+}
+.images__image{
+  img{
+    width: 320px;
+  }
+}
+
+.product__titles{
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ margin: 2rem 0;
+}
+.titles__timer{
+  width: 50vw;
+  margin-right: 2rem;
+  text-align: right;
+  img{
+    width: 100px;
+  }
+}
+.titles__main{
+  width: 50vw;
+  font-size: 50px;
+  @media(min-width:900px){
+    font-size: 70px;
+  }
+  font-family: "LemonYellowSun";
+}
+
+.description{
+  text-align: center;
+  @media(min-width:900px){
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 95vw;
+  }
+}
+.description__text{
+  @media(min-width:900px){
+    width: 60vw;
+  }
+  font-size: 20px;
+  margin: 2rem;
+}
+.description__aside{
+  @media(min-width:900px){
+    width: 40vw;
+  }
+  margin: 2rem;
+  h2{
+    margin: .8rem;
+    text-decoration: underline;
+  }
+}
+
+/* Faire des trucs pour webp et tailles appropriées */
+/* different background images */
+@media(min-width:650px){
+  .product__images--noodles{
+    background: url("../assets/img/champignons.png")no-repeat 10% center/250px,
+    url("../assets/img/epice.png")no-repeat center right 5%/250px ;
+  }
+  .product__images--soba{
+    background: url("../assets/img/soba-yakisoba-300.png")no-repeat 10% center/350px,
+    url("../assets/img/soba-yakisoba-300.png")no-repeat center right 5%/350px;
+  }
+  .product__images--ramen{
+    background: url("../assets/img/ramen-kimchi-300.png")no-repeat 10% center/250px,
+    url("../assets/img/ramen-kimchi-300.png")no-repeat center right 5%/250px;
+  }
+}
+@media(min-width:1000px){
+  .product__images--noodles{
+    background: url("../assets/img/crevettes.png") no-repeat 30% center/280px,
+    url("../assets/img/poulet.png") no-repeat center right 30%/280px,
+    url("../assets/img/champignons.png")no-repeat 5% center/250px,
+    url("../assets/img/epice.png")no-repeat center right 5%/250px;
+  }
+  .product__images--soba{
+    background: url("../assets/img/soba-chili.png") no-repeat 30% center/250px,
+    url("../assets/img/soba-chili.png") no-repeat center right 30%/250px,
+    url("../assets/img/soba-yakisoba-300.png")no-repeat 5% center/350px,
+    url("../assets/img/soba-yakisoba-300.png")no-repeat center right 5%/350px;
+  }
+  .product__images--ramen{
+    background: url("../assets/img/ramen-boeuf-epice-300.png") no-repeat 30% center/280px,
+    url("../assets/img/ramen-boeuf-epice-300.png") no-repeat center right 30%/280px,
+    url("../assets/img/ramen-kimchi-300.png")no-repeat 5% center/250px,
+    url("../assets/img/ramen-kimchi-300.png")no-repeat center right 5%/250px;
+  }
+}

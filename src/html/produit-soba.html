@@ -37,7 +37,7 @@
         <li class="items__item items__item--right"><a href="index.html#histoire">Histoire</a></li>
         <li class="items__item items__item--right"><a href="index.html#actualites">Actualités</a></li>
       </ul>
-      <div class="menu--opener" id="open-menu">
+      <div class="menu__opener" id="open-menu">
         <div class="menu__icon icon">
           <!--First image of ramen box-->
           <svg class="icon__kapa icon__kapa--open" id="kapa" class="transparent" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg"
@@ -140,9 +140,9 @@
       </g>
     </svg>
   </header>
-  <main>
-    <div class="product">
-      <picture>
+  <main class="product">
+    <div class="product__images product__images--soba">
+      <picture class="images__logo">
         <source type="image/webp"
                 srcset="../assets/img/WebP/200/soba-logo-noir.webp 200w,
                         ../assets/img/WebP/500/soba-logo-noir.webp 500w,
@@ -157,7 +157,7 @@
         <img src="../assets/img/soba-logo-noir.png"
         alt="logo soba" />
     </picture>
-    <picture>
+    <picture class="images__image">
         <source type="image/webp"
                 srcset="../assets/img/WebP/200/2-soba.webp 200w,
                         ../assets/img/WebP/500/2-soba.webp 500w,
@@ -173,9 +173,8 @@
         alt="cups de soba" />
     </picture>
     </div>
-    <div class="soustitre">
-      <div>
-        <picture  class="timer">
+    <div class="product__titles titles">
+        <picture class="titles__timer">
             <source type="image/webp"
                     srcset="../assets/img/WebP/200/timer.webp 200w,
                             ../assets/img/WebP/500/timer.webp 500w,
@@ -190,19 +189,17 @@
             <img src="../assets/img/timer.png"
             alt="chronometre" />
         </picture>
-        <h1>NISSIN<br>SOBA</h1>
-      </div>
+        <h1 class="titles__main">NISSIN<br>SOBA</h1>
     </div>
 
-    <div class="description">
-      <p class="text">Composés de délicieuses nouilles aux légumes agrémentées d’une irrésistible sauce Yakisoba, sont
+    <div class="product__description description">
+      <p class="description__text">Composés de délicieuses nouilles aux légumes agrémentées d’une irrésistible sauce Yakisoba, sont
         faciles à
         préparer et pratiques à servir au bureau comme à la maison, grâce à leur couvercle-passoire.</p>
-      <div class="bottom-page">
+      <div class="description__aside">
         <h2>Sept recettes savoureuses:</h2>
         <p>Classic, Chili, Curry, Teriyaki, Thaï, Sukiyaki et Yakitori.</p>
       </div>
-
     </div>
   </main>
 </body>

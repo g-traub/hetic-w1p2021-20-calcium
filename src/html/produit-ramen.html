@@ -37,7 +37,7 @@
         <li class="items__item items__item--right"><a href="index.html#histoire">Histoire</a></li>
         <li class="items__item items__item--right"><a href="index.html#actualites">Actualités</a></li>
       </ul>
-      <div class="menu--opener" id="open-menu">
+      <div class="menu__opener" id="open-menu">
         <div class="menu__icon icon">
           <!--First image of ramen box-->
           <svg class="icon__kapa icon__kapa--open" id="kapa" class="transparent" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg"
@@ -140,9 +140,9 @@
       </g>
     </svg>
   </header>
-  <main>
-    <div class="product">
-        <picture>
+  <main class="product">
+    <div class="product__images product__images--ramen">
+        <picture class="images__logo">
             <source type="image/webp"
                     srcset="../assets/img/WebP/200/logo-ramen.webp 200w,
                             ../assets/img/WebP/500/logo-ramen.webp 500w,
@@ -157,7 +157,7 @@
             <img src="../assets/img/logo-ramen.png"
             alt="logo ramen" />
         </picture>
-        <picture>
+        <picture class="images__image">
             <source type="image/webp"
                     srcset="../assets/img/WebP/200/2-ramen.webp 200w,
                             ../assets/img/WebP/500/2-ramen.webp 500w,
@@ -174,9 +174,8 @@
         </picture>
     </div>
 
-    <div class="subtitle">
-      <div>
-        <picture  class="timer">
+    <div class="product__titles titles">
+        <picture class="titles__timer">
             <source type="image/webp"
                     srcset="../assets/img/WebP/200/timer.webp 200w,
                             ../assets/img/WebP/500/timer.webp 500w,
@@ -191,14 +190,13 @@
             <img src="../assets/img/timer.png"
             alt="chronometre" />
         </picture>
-        <h1>NISSIN<br>RAMEN</h1>
-      </div>
+        <h1 class="titles__main">NISSIN<br>Ramen</h1>
     </div>
-    <div class="description">
-      <p>Riches et authentiques, avec un assaisonnement « à la japonaise », ces soupes raviront vos papilles. Dans
-        leur généreux format 100 g, elles constituent un délicieux repas complet.</p>
-      <p>Depuis plus de 30 ans, un délicieux plat à base de nouilles, facile à préparer.</p>
-      <div class="bottom-page">
+    <div class="product__description description">
+      <p class="description__text">Riches et authentiques, avec un assaisonnement « à la japonaise », ces soupes raviront vos papilles. Dans
+      leur généreux format 100 g, elles constituent un délicieux repas complet.<br>
+      Depuis plus de 30 ans, un délicieux plat à base de nouilles, facile à préparer.</p>
+      <div class="description__aside">
         <h2>Cinq recettes savoureuses:</h2>
         <p>Sauce soja, Boeuf épicé, Poulet ail, Tomyum et Kimchi.</p>
       </div>

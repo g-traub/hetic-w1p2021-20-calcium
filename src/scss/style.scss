@@ -2,7 +2,11 @@
 
 @import 'config/fonts';
 
-@import 'blocs/general.scss';
-@import 'blocs/products.scss';
-@import 'blocs/article.scss';
+/* @import 'blocs/general.scss'; */
+@import 'blocs/product.scss';
+/* @import 'blocs/article.scss'; */
 @import 'blocs/header.scss';
+@import 'blocs/index.scss';
+
+@import 'global/typography.scss';
+@import 'global/general.scss';

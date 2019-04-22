@@ -1,14 +1,32 @@
+@keyframes jump {
+  50% {
+    transform: translateY(-10px);
+  }
+}
 .header{
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
 }
-
+.container__video{
+  min-width: 100vw;
+  height:80vh;
+  object-fit: cover;
+}
 .menu__logo--red{
   position: absolute;
   top:0;
   z-index: 100;
   width: 180px;
+}
+.arrow{
+  position: relative;
+  bottom: 200px;
+  width: 90px;
+  height: 100px;
+  fill: #FF0000;
+  animation: 1s jump ease-out infinite;
 }
 
 /* ramen box */
@@ -69,9 +87,8 @@
   cursor: pointer;
   width: 100vw;
   margin-bottom: 10px;
-  margin-top: 60px;
+  margin-top: 70px;
 }
-
 
 .items__item{
   flex-grow: 1;
@@ -85,11 +102,12 @@
   }
 }
 
-.menu--opener {
+.menu__opener {
   width: 50px;
   height: 50px;
   position:fixed;
   cursor: pointer;
+  z-index: 100;
 }
 
 .menu__icon {
@@ -157,7 +175,7 @@
     background-color: black;
   }
   
-  .menu--open {
+  .menu__opener {
     display: none;
   }
 

@@ -18,7 +18,7 @@
   </head>
 
   <body>
-    <header class="header">
+    <header class="header--main header">
       <nav class="header__menu menu" id="menu">
         <a class="menu__home" href="index.html#">
           <picture class="menu__logo">
@@ -54,7 +54,7 @@
             <a href="index.html#actualites">Actualités</a>
           </li>
         </ul>
-        <div class="menu--opener" id="open-menu">
+        <div class="menu__opener" id="open-menu">
           <div class="menu__icon icon">
             <!--First image of ramen box-->
             <svg
@@ -289,14 +289,16 @@
           </g>
         </g>
       </svg>
-      <video autoplay loop muted poster="" id="bgvid">
-        <source
-          src="../assets/img/samourai-noodles-video-2.mp4"
-          type="video/mp4"
-        />
-      </video>
+      <div class="header__container">
+        <video autoplay loop muted poster="" id="bgvid" class="container__video">
+          <source
+            src="../assets/img/samourai-noodles-video-2.mp4"
+            type="video/mp4"
+          />
+        </video>
+      </div>
       <a id="lien" href="#produits">
-        <div class="arrowDiv">
+        <div class="header__arrow">
           <svg
             class="arrow"
             version="1.1"
@@ -323,16 +325,15 @@
       </a>
     </header>
     <main>
-      <article id="produits" class="produit">
-        <div class="titre">
+      <article id="produits" class="produits">
+        <div class="produits__titre titre">
           <h1><span>NOS</span></h1>
           <h1>PRODUITS</h1>
         </div>
-        <div class="article-content">
+        <div class="produits__content">
           <a href="produit-nouilles.html">
-            <section class="noodles">
-              <h2>noodles</h2>
-              <picture class="image-produit">
+            <section class="content__produit">
+              <picture class="produit__image">
                 <source
                   type="image/webp"
                   srcset="
@@ -355,7 +356,7 @@
                   alt="cup noodles"
                 />
               </picture>
-              <picture class="titre-produit">
+              <picture class="produit__logo">
                 <source
                   type="image/webp"
                   srcset="
@@ -381,9 +382,8 @@
             </section>
           </a>
           <a href="produit-ramen.html">
-            <section class="ramen">
-              <h2>ramen</h2>
-              <picture class="titre-produit" id="titre-ramen">
+            <section class="content__produit content__produit--ramen">
+              <picture class="produit__logo" id="titre-ramen">
                 <source
                   type="image/webp"
                   srcset="
@@ -406,7 +406,7 @@
                   alt="titre ramen"
                 />
               </picture>
-              <picture class="image-produit" id="titre-ramen">
+              <picture class="produit__image" id="titre-ramen">
                 <source
                   type="image/webp"
                   srcset="
@@ -429,9 +429,8 @@
             </section>
           </a>
           <a href="produit-soba.html">
-            <section class="soba">
-              <h2>soba</h2>
-              <picture class="image-produit">
+            <section class="content__produit">
+              <picture class="produit__image">
                 <source
                   type="image/webp"
                   srcset="
@@ -451,7 +450,7 @@
                 />
                 <img src="../assets/img/2-soba-index.png" alt="cups de soba" />
               </picture>
-              <picture class="titre-produit">
+              <picture class="produit__logo">
                 <source
                   type="image/webp"
                   srcset="
@@ -479,12 +478,12 @@
         </div>
       </article>
       <article class="valeurs" id="valeurs">
-        <div class="titre">
+        <div class="valeurs__titre titre titre--odd">
           <h1><span>NOS</span></h1>
           <h1>VALEURS</h1>
         </div>
-        <div class="article-content">
-          <section>
+        <div class="valeurs__content">
+          <section class="content__text">
             <h2>LA QUALITÉ NISSIN</h2>
             <p>
               Des produits qui respectent de façon stricte les normes
@@ -493,7 +492,7 @@
               Européenne. Produits sans OGM.
             </p>
           </section>
-          <div class="separateur-nouilles">
+          <div class="content__separateur">
             <svg
               width="210"
               height="36"
@@ -521,7 +520,7 @@
               />
             </svg>
           </div>
-          <section>
+          <section class="content__text">
             <h2>LA SÉCURITÉ CERTFIÉE</h2>
             <p>
               Fabrication Européenne, Certifications IFS (international Food
@@ -530,24 +529,24 @@
             </p>
           </section>
         </div>
-        <div class="photo-pub"></div>
+        <div class="valeurs__pub"></div>
       </article>
       <article class="histoire" id="histoire">
-        <div class="titre">
+        <div class="histoire__titre titre">
           <h1><span>NOTRE</span></h1>
           <h1>HISTOIRE</h1>
         </div>
-        <div class="timeline">
+        <div class="histoire__timeline timeline">
           <section>
-            <div class="point"></div>
-            <div class="date-explain">
+            <div class="timeline__point"></div>
+            <div class="timeline__explain">
               <h3>1945:</h3>
               <p>Création de la société</p>
             </div>
           </section>
           <section>
-            <div class="point"></div>
-            <div class="date-explain">
+            <div class="timeline__point"></div>
+            <div class="timeline__explain"">
               <h3>1958:</h3>
               <p>
                 Commercialisation des premières nouilles instantanée au monde
@@ -556,8 +555,8 @@
             </div>
           </section>
           <section>
-            <div class="point"></div>
-            <div class="date-explain">
+            <div class="timeline__point"></div>
+            <div class="timeline__explain"">
               <h3>1971:</h3>
               <p>
                 Création de la marque "Cup Noodles" & création de Nissin Foods
@@ -566,22 +565,22 @@
             </div>
           </section>
           <section>
-            <div class="point"></div>
-            <div class="date-explain">
+            <div class="timeline__point"></div>
+            <div class="timeline__explain">
               <h3>1993:</h3>
               <p>Arrivée sur le marché européen</p>
             </div>
           </section>
           <section>
-            <div class="point"></div>
-            <div class="date-explain">
+            <div class="timeline__point"></div>
+            <div class="timeline__explain"">
               <h3>2005:</h3>
               <p>Lancement des "Spaces Ramen" conçues pour les astronautes</p>
             </div>
           </section>
           <section>
-            <div class="point"></div>
-            <div class="date-explain">
+            <div class="timeline__point"></div>
+            <div class="timeline__explain"">
               <h3>2012:</h3>
               <p>
                 Lancement d'une nouvelle gamme de produits en Europe : les
@@ -590,8 +589,8 @@
             </div>
           </section>
           <section>
-            <div class="point"></div>
-            <div class="date-explain">
+            <div class="timeline__point"></div>
+            <div class="timeline__explain">
               <h3>2017:</h3>
               <p>Ouverture d'une usine en Europe</p>
             </div>
@@ -599,11 +598,14 @@
         </div>
       </article>
       <article class="actu" id="actualites">
-        <h1 class="titre">ACTUALITÉS</h1>
-        <div class="article-content">
-          <section>
+        <div class="actu__titre titre--odd titre">
+          <h1><span>NOTRE</span></h1>
+          <h1 >ACTUALITÉS</h1>
+        </div>
+        <div class="actu__content">
+          <section class="content__article">
             <a href="article-1.html">
-              <picture>
+              <picture class="article__image">
                 <source
                   type="image/webp"
                   srcset="
@@ -628,16 +630,15 @@
               </picture>
             </a>
             <a href="article-1.html">
-              <h2>
+              <h2 class="article__title">
                 Les nouilles instantanées : 50 ans d’une réussite à l’échelle
                 mondiale
               </h2>
             </a>
-            <div class="bordure"></div>
           </section>
-          <section>
+          <section class="content__article">
             <a href="article-2.html">
-              <picture>
+              <picture class="article__image">
                 <source
                   type="image/webp"
                   srcset="
@@ -662,9 +663,8 @@
               </picture>
             </a>
             <a href="article-2.html">
-              <h2>Nissin : l'empire de la nouille</h2>
+              <h2 class="article__title">Nissin : l'empire de la nouille</h2>
             </a>
-            <div class="bordure"></div>
           </section>
         </div>
       </article>

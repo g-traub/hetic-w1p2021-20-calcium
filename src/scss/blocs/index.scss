@@ -1,0 +1,122 @@
+.produits__titre{
+  z-index:1;
+}
+.titre{
+  color:#fff;
+  text-align: center;
+  padding: 1rem 0;
+  line-height: 1;
+  background-color: #FF0000;
+  border-top-left-radius: 300px 150px;
+  border-top-right-radius: 300px 150px;
+}
+.titre--odd{
+  border-top-left-radius : 0;
+  border-top-right-radius : 0;
+  border-bottom-left-radius : 300px 150px;
+  border-bottom-right-radius : 300px 150px;
+}
+.content__produit{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #1C1C20;
+  padding: 5% 0;
+  &:hover{
+    transform: scale(1.01);
+  }
+}
+main{
+  margin-top: -210px;
+  position: relative;
+}
+.content__produit--ramen{
+  background-color: #fff;
+}
+.produit__image img{
+  width: 200px;
+}
+.produit__logo img{
+  height: 200px;
+}
+
+.valeurs__pub{
+  display: none;
+  height:60vh;
+  background-size: cover;
+  background-position: center center;
+  background-image: url("../assets/img/500/photo-pub-bg.png");
+  @media (min-width: 800px) {
+    background-image: url("../assets/img/800/photo-pub-bg.png");
+    @media (min-resolution: 192dpi) {
+      background-image: url("../assets/img/1200/photo-pub-bg.png");
+    }
+  }
+  @supports(background: url("../assets/img/WebP/500/photo-pub-bg.webp")){
+      background-image: url("../assets/img/WebP/500/photo-pub-bg.webp");
+    @media (min-width: 800px) {
+      background-image: url("../assets/img/WebP/800/photo-pub-bg.webp");
+      @media (min-resolution: 192dpi) {
+        background-image: url("../assets/img/WebP/1200/photo-pub-bg.webp");
+      }
+    }
+  }
+}
+
+.valeurs{
+  text-align: center;
+}
+.content__text{
+  margin: 2rem 1rem;
+}
+.timeline{
+  background: url("../assets/img/timeline.svg") repeat-y top left 15px;
+  position: relative;
+  margin: 2rem .4rem;
+}
+.timeline__point{
+  width: 10px;
+  height:10px;
+  border-radius: 50%;
+  background-color:  #FF0000;
+  position: absolute;
+  left: 16px;
+}
+.timeline__explain{
+  h3{
+    font-size: 1.8rem;
+  }
+}
+.timeline section{
+  margin-left: 2.8rem;
+}
+.actu__content{
+  margin-top: -.8rem;
+  text-align: center;
+}
+.actu__titre{
+  position: relative;
+  z-index:100;
+  box-shadow: 0 .5px 1px rgba(0, 0, 0, 0.103);
+}
+.article__title{
+  padding: 1rem;
+}
+.article__image img{
+  max-width: 500px;
+}
+
+.content__article:hover .article__title{
+  transform: scale(1.01);
+}
+
+.content__article{
+  &::after{
+    content: ' ';
+    display: block;
+    height:3px;
+    width: 70%;
+    margin: 1rem auto;
+    background-color: #FF0000;
+  }
+}
