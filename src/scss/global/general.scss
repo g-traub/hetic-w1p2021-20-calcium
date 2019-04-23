@@ -4,6 +4,9 @@ body{
   @media (min-width: 960px){
     margin-bottom: 0;
   }
-  overflow-x: hidden;
   min-width: 320px;
+}
+
+html, body{
+  overflow-x: hidden;
 }

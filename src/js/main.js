@@ -1,3 +1,5 @@
+document.addEventListener("DOMContentLoaded", yall);
+
 var menu = document.getElementById('menu');
 var opener = document.getElementById('open-menu');
 opener.addEventListener('click', function() {
@@ -44,16 +46,3 @@ window.addEventListener('scroll', function ( event ) {
 	}, 400);
 
 }, false);
-
-const produits = document.getElementById('produits');
-if (produits){
-	var waypoint1 = new Waypoint({
-		element: produits,
-		handler: function() {
-			document.querySelector('.soba').classList.add('reached');
-			document.querySelector('.ramen').classList.add('reached');
-			document.querySelector('.noodles').classList.add('reached');
-		},
-		offset: 400
-	});
-}

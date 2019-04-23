@@ -3,15 +3,16 @@
 
 <head>
   <title>Article - Nissin empereur de la nouille</title>
-  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/article.css">
   <script defer rel="script" src="../js/all.js"></script>
   <link rel="shortcut icon" type="image/x-icon" href="../assets/img/logo-miniature.png" />
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description" content="Site de présentation produits Nissin Foods" />
   <style>
-      @font-face {
+           @font-face {
   font-family: 'Greycliff CF';
+  font-display: auto;
   src: url('../assets/fonts/GreycliffCF-Heavy.woff2') format('woff2'),
        url('../assets/fonts/GreycliffCF-Heavy.woff') format('woff');
   font-weight: 900;
@@ -20,6 +21,7 @@
 
 @font-face {
   font-family: 'LemonYellowSun';
+  font-display: auto;
   src: url('../assets/fonts/LemonYellowSun.woff2') format('woff2'),
        url('../assets/fonts/LemonYellowSun.woff') format('woff');
   font-weight: normal;
@@ -28,6 +30,7 @@
 
 @font-face {
   font-family: 'Cubano';
+  font-display: auto;
   src: url('../assets/fonts/Cubano-Regular.woff2') format('woff2'),
        url('../assets/fonts/Cubano-Regular.woff') format('woff');
   font-weight: normal;
@@ -36,6 +39,7 @@
 
 @font-face {
   font-family: 'Greycliff CF';
+  font-display: auto;
   src: url('../assets/fonts/GreycliffCF-Regular.woff2') format('woff2'),
        url('../assets/fonts/GreycliffCF-Regular.woff') format('woff');
   font-weight: normal;
@@ -186,8 +190,8 @@
                           ../assets/img/800/pub-nouilles.jpg 800w,
                           ../assets/img/1200/pub-nouilles.jpg 1200w"
                   />
-          <img src="../assets/img/schema-coupe-transversale.jpg"
-          alt="Schéma processus cuisson nouilles"/>
+          <img src="../assets/img/pub-nouilles.jpg"
+          alt="Pub nouilles"/>
       </picture>
     <article class="article">
       <div class="article__title">
@@ -216,7 +220,7 @@
                                   ../assets/img/800/createur.jpg 800w,
                                   ../assets/img/1200/createur.jpg 1200w"
                           />
-                  <img src="../assets/img/createur.jpg"
+                  <img class="lazy" src="../assets/img/createur.jpg"
                   alt="Momofuku Andō tenant une cup de noodles"/>
               </picture>
             <figcaption>Momofuku Andō, créateur de Nissin, à la cup noodle factory</figcaption>
@@ -252,7 +256,7 @@
                                 ../assets/img/800/cupnoddle-vitrine.jpg 800w,
                                 ../assets/img/1200/cupnoddle-vitrine.jpg 1200w"
                         />
-                <img src="../assets/img/cupnoddle-vitrine.jpg"
+                <img class="lazy" src="../assets/img/cupnoddle-vitrine.jpg"
                 alt="cup noodles dans une vitrine"/>
             </picture>
           <figcaption>Cup noodles exposées au musée « Momofuku Ando Instant Ramen ».</figcaption>
@@ -289,7 +293,7 @@
                                 ../assets/img/800/noddles.jpg 800w,
                                 ../assets/img/1200/noddles.jpg 1200w"
                         />
-                <img src="../assets/img/noddles.jpg"
+                <img class="lazy" src="../assets/img/noddles.jpg"
                 alt="boite de nouilles"/>
             </picture>
           </figure>

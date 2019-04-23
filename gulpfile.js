@@ -32,7 +32,7 @@ function html(){
   .pipe(dest('dist/'))
 }
 function css() {
-  return src('./src/scss/style.scss')
+  return src('./src/scss/*.scss')
   .pipe(sass())
   .pipe(pxtorem({proplist:['*']}))
   .pipe(gulpif(prod,autoprefixer({
@@ -43,7 +43,7 @@ function css() {
 }
 
 function js() {
-  return src(['./src/js/lib/noframework.waypoints.min.js', './src/js/main.js'])
+  return src(['./src/js/lib/yall.min.js','./src/js/main.js'])
   .pipe(concat('all.js'))
   .pipe(dest('dist/js'))
 }
