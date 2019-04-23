@@ -36,11 +36,10 @@
 .produits{
   @media (min-width: 1000px){
     height: 100vh;
-    background: url("../assets/img/nouille-incline-bg.png") no-repeat top right, url("../assets/img/Ellipse-bg-index.png") no-repeat top left;
-    @supports(background: url("../assets/img/WebP/nouille-incline-bg.webp") no-repeat top right, url("../assets/WebP/img/Ellipse-bg-index.webp") no-repeat top left){
-      background: url("../assets/img/WebP/nouille-incline-bg.webp") no-repeat top right, url("../assets/img/WebP/Ellipse-bg-index.webp") no-repeat top left;
+    background: url("../assets/img/nouille-incline-bg.png") repeat-y top right, url("../assets/img/Ellipse-bg-index.png") no-repeat top left white;
+    @supports(background: url("../assets/img/WebP/nouille-incline-bg.webp") repeat-y top right, url("../assets/WebP/img/Ellipse-bg-index.webp") no-repeat top left){
+      background: url("../assets/img/WebP/nouille-incline-bg.webp") repeat-y top right, url("../assets/img/WebP/Ellipse-bg-index.webp") no-repeat top left white;
     }
-    background-color: white;
   }
 }
 .produits__content{
@@ -49,6 +48,7 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+    z-index: 1;
   }
 }
 .content__produit{
